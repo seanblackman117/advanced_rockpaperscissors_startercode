@@ -1,14 +1,3 @@
-#rock{
-    height:150px;
-    width:200px;
-}
-
-#paperman{
-    height:150px;
-    width:200px;
-}
-
-#edward{
-    height:150px;
-    width:200px;
+body {
+    background-image: url("/images/rps.png");
 }

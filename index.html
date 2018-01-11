@@ -6,9 +6,12 @@
       <!-- Link CSS here -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <!-- Link JQuery here -->
-     <script src="jquery-3.2.1.min.js"></script>
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
       <!-- Link Javascript File here -->
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
       <!-- Latest compiled and minified Bootstrap CSS -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -26,11 +29,12 @@
     <div class="container text-center">
       <h1>Rock, Paper, Scissors!!!1!1!11!</h1>
         <p>Pick rock, paper, or scissors in an epic game to beat your opponent! Remember: rock beats paper, scissors beat paper, and paper beats rock. </p>
-        <img id="rock"  src="images/golem.png">
-        <img id="paperman" src="images/paperman.jpg">
-        <img id="edward" src="images/edward.jpg">
-    
+        
+        <input id = "input" placeholder = "Put rock, paper, or scissors here!">
+        <button id = "submit">Submit</button>
     </div>
+    
+    <p id="results"></p>
 
   </body>
 

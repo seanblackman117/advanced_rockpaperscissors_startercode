@@ -18,6 +18,8 @@
 //******************TEST EARLY AND OFTEN USING console.log() ******************
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
+/*global $*/
+
 //GLOBAL VARIABLES
 var userChoice = "";
 var computerChoice = "";
@@ -30,3 +32,54 @@ var choices = ["rock","paper","scissors"];
 
 // DOCUMENT READY FUNCTION
 
+$(document).ready(function() {
+
+        $("#submit").click(function() {
+                var userChoice = $("#input").val();
+                console.log(userChoice);
+                if (userChoice === "rock") {
+                        computerChoice = Math.floor(Math.random() * choices.length);
+                        computerChoice = choices[computerChoice]
+                        console.log(computerChoice);
+                        if (computerChoice === "rock") {
+                                $("#results").html("Computer chose rock! It's a tie!");
+                        } 
+                        else if (computerChoice === "paper") {
+                                $("#results").html("Computer chose paper! You lose!");
+                        }
+                        else if (computerChoice === "scissors") {
+                                $("#results").html("Computer chose scissors! You win!");
+                        }
+                }
+                
+                if (userChoice === "paper") {
+                        computerChoice = Math.floor(Math.random() * choices.length);
+                        computerChoice = choices[computerChoice]
+                        console.log(computerChoice);
+                         if (computerChoice === "rock") {
+                                $("#results").html("Computer chose rock! You win!");
+                        } 
+                        else if (computerChoice === "paper") {
+                                $("#results").html("Computer chose paper! It's a tie!");
+                        }
+                        else if (computerChoice === "scissors") {
+                                $("#results").html("Computer chose scissors! You lose!");
+                        }
+                }
+                
+                if (userChoice === "scissors") {
+                        computerChoice = Math.floor(Math.random() * choices.length);
+                        computerChoice = choices[computerChoice]
+                        console.log(computerChoice);
+                         if (computerChoice === "rock") {
+                                $("#results").html("Computer chose rock! You lose!");
+                        } 
+                        else if (computerChoice === "paper") {
+                                $("#results").html("Computer chose paper! You win!");
+                        }
+                        else if (computerChoice === "scissors") {
+                                $("#results").html("Computer chose scissors! It's a tie!");
+                        }
+                }
+        });
+});
